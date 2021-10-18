@@ -3,7 +3,8 @@
 
 <body>
   <div id="root"></div>
-
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
   <!-- 🐨 add React and ReactDOM on the page.
        💰 Here are script tags that'll do the job:
   <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
@@ -25,5 +26,12 @@
     // 🐨 Please re-implement the regular document.createElement code above
     // with these React API calls
     // 💰 The example in the markdown file should be a good hint for you.
+
+    const elementProps = {id: 'element-id', className: 'container', children: 'Hello World'};
+    const elementType = 'div';
+    const reactElement = React.createElement(elementType, elementProps);
+
+
+    ReactDOM.render(reactElement, rootElement);
   </script>
 </body>
